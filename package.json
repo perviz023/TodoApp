@@ -10,9 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/native-stack": "^6.9.7",
     "react": "18.1.0",
     "react-native": "0.70.6",
-    "react-native-bouncy-checkbox": "^3.0.6"
+    "react-native-bouncy-checkbox": "^3.0.6",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
