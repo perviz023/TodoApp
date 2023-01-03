@@ -4,14 +4,14 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import Splash from './screens/Splash'
 import Home from './screens/Home'
-import {Provider} from 'react-redux'
-import { Store } from './redux/store';
+// import {Provider} from 'react-redux'
+// import { Store } from './redux/store';
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 function App() {
   return (
-    <Provider store={Store}>
+    // <Provider store={Store}>
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Splash"
@@ -38,13 +38,13 @@ function App() {
             name="Home"
             component={Home}
           />
-          <Stack.Screen
+          {/* <Stack.Screen
             name="Task"
             component={Task}
-          />
+          /> */}
         </Stack.Navigator>
       </NavigationContainer>
-    </Provider>
+    // </Provider>
   )
 }
 
